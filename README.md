@@ -1,2 +1,2 @@
 # Form-Structures
-C# MVC forms
+This project was built with C# MVC architecture.
