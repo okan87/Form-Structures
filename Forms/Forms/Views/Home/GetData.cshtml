@@ -1,0 +1,53 @@
+﻿@model ReceievedData
+
+<div class="container">
+    <div class="row">
+        <div class="column-md-12">
+            @using (Html.BeginForm())
+            {
+                <div>
+                    @Html.LabelFor(x => x.Sayi)
+                </div>
+                <div>
+                    @Html.TextBoxFor(x => x.Sayi)
+                </div>
+                <div>
+                    @Html.LabelFor(x => x.Yazi)
+                </div>
+                <div>
+                    @Html.TextBoxFor(x => x.Yazi)
+                </div>
+                <br />
+                <input type="submit" name="onayla" value="onayla" />
+            }
+
+        </div>
+    </div>
+</div>
+@if(ViewBag.data != null)
+{
+    <p>veri: @ViewBag.data</p>
+}
+@if(ViewBag.Error != null)
+{
+    <p style="color:red"><b>@ViewBag.Error</b></p>
+}
+
+@*<div class="container">
+    <div class="row">
+        <div class="column-md-12">
+            @using(Html.BeginForm())
+            {
+            <label>Sayi</label>
+            <input name="sayi" type="text" id="sayi" class="sayi" />
+            <br /><br />
+            <label>Yazi</label>
+            <input name="yazi" type="text" id="yazi" class="yazi" />
+            <br /><br />
+            <input type="submit" name="onayla" value="onayla" />
+            }
+            
+        </div>
+    </div>
+</div>
+<p>veri: @ViewBag.data</p>*@
